@@ -1,0 +1,60 @@
+.border{
+    border: 2px solid rgb(255, 51, 51);
+    
+}
+.flex{
+    display: flex;
+}
+
+
+.justify-centre{
+    justify-content: center;
+}
+.spacebetween{
+    justify-content: space-between;
+}
+
+
+.align-centre{
+    align-items: center;
+}
+
+.gap15{
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.bgblack{
+    background: #121212;
+    color: #fefefe;
+}
+.fadedcolor{
+    color: #b3b3b3;
+}
+
+
+
+
+.invert{
+    filter: invert(1);
+}
+
+.m5{
+    margin: 5px;
+}
+.roundb{
+    border-radius: 15px;
+}
+
+.p20{
+padding: 20px;
+
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <div class="container flex ">
+        <div class="left ">
+
+
+
+
+
+
+
+            <div class="home m5 roundb bgblack  p20">
+                <div class="logo"><img class="invert" src="assets/logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="assets/home.svg" alt="home">Home</li>
+                    <li class="fadedcolor"><img class="invert" src="assets/search.svg" alt="">Search</li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="library m5 roundb      bgblack   p20 ">
+                <div class="lib flex align-centre spacebetween">
+                    <div class="lib-p1 fadedcolor"><img class="invert" src="assets/library.svg" alt="lib"> Your library
+                    </div>
+                    <div class="plus">
+
+                        <img class="invert" src="assets/plus.svg" alt="plus">
+                    </div>
+
+                </div>
+
+
+                <div class="songlist">
+                    <ul>
+
+
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="footer">
+                    <div class="link ">
+                        <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                        <div style="width: 120px;"><a
+                                href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &
+                                    PrivacyCenter</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy
+                                    Policy</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                        </div>
+                        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About
+                                    Ads</span></a></div>
+                        <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                        </div>
+                    </div>
+                    <div class="cookie">
+                        <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                            rel="noopener"><span>Cookies</span></a>
+                    </div>
+
+
+                    <button class="flex bgblack align-centre "> <img class="invert" src="assets/lang.svg" alt="">
+                        English</button>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="crosstoclose">
+            <img src="assets/cross.png" alt="">
+        </div>
+
+
+        <!-- ! right started -->
+        <div class="right  roundb">
+
+
+            <!-- ! HEADER -->
+            <div class="header bgblack">
+                <span class="hamburger">
+                    <img onclick="openleft()" src="assets/hamburger.png" alt="">
+                </span>
+                <div class="sidebuttons">
+                    <button><img src="assets/navbtn1.svg" alt="leftbtn"></button>
+                    <button><img src="assets/navbtn2.svg" alt="rightbtn"></button>
+
+                </div>
+                <div class="signup">
+                    <button class="fadedcolor">Sign up</button>
+                    <button>Log in</button>
+                </div>
+
+            </div>
+
+
+            <!-- * BODY  -->
+            <div class="spotify-playlist">
+                <h1>Spotify Playlists</h1>
+                <div class="cardcontainer">
+                    
+                    <!-- <div class="card" data-folder="animal">
+                        <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="card_image ">
+                        <button class="playbtn"> <img src="assets/play.png" alt="play_button"> </button>
+
+                        <h1>ANIMAL</h1>
+                        <p>artist names artist names</p>
+
+                    </div>
+
+                    <div class="card" data-folder="random">
+                        <img id="random" src="assets/random.png" alt="card_image ">
+                        <button class="playbtn"> <img src="assets/play.png" alt="play_button"> </button>
+
+                        <h1>Random songs</h1>
+                        <p>artist names artist names</p>
+
+                    </div> -->
+                </div>
+
+
+
+
+            </div>
+            <div class="playbar">
+
+
+
+                <div class="songinfo">
+                    song name
+                </div>
+
+
+                <div class="seekbarcont">
+                    <span class="songtime1">"0"</span>
+
+
+                    <div class="seekbar flex align-centre">
+                        <div class="circle"></div>
+                        <div class="filler"></div>
+                    </div>
+
+
+                    <span class="songtime2">"04:50"</span>
+                </div>
+
+                <div class="songbtn">
+
+                    <div class="lyrics">
+                        <img src="assets/lyrics.png" alt="">
+                    </div>
+
+                    <div class="img">
+                        <img onclick="sameprevious()" ondblclick="previous()" src="assets/previous.png" alt="prev">
+                        <img id="play" src="assets/play.png" alt="play">
+                        <img onclick="next()" src="assets/next.png" alt="next">
+
+                    </div>
+
+                    <div class="vol">
+                        <img onclick="mute_unmute()" src="assets/volume.png" alt="volume">
+                        <div class="in">
+                        <input   type="range" id="volume-slider" min="0" max="1" step="0.01" value="1"></div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
