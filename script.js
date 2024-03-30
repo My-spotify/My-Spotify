@@ -2,7 +2,7 @@
 async function getsongs(folder) {
 
 
-    let a = await fetch(`songs/${folder}`)
+    let a = await fetch(`tree/main/songs/${folder}`)
 
 
     let response = await a.text()
@@ -144,7 +144,7 @@ function urltosongname(song) {
 async function displayalbum(){
 
 
-    let a = await fetch(`songs/`)
+    let a = await fetch(`/tree/main/songs/`)
 
 
     let response = await a.text()
@@ -166,7 +166,7 @@ async function displayalbum(){
             
             // getting meta data of the folder
             
-            let b = await fetch(`songs/${folder}/info.json`)
+            let b = await fetch(`/tree/main/songs/${folder}/info.json`)
             let response2 = await b.json();
             
             document.querySelector(".cardcontainer").insertAdjacentHTML('beforeend', `
