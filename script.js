@@ -2,10 +2,10 @@
 async function getsongs(folder) {
 
 
-    let a = await fetch(`https://github.com/My-spotify/My-Spotify/tree/main/assets/songs/${folder}`)
+    let a = await fetch(`assets/songs/${folder}`)
 
 
-    let response = await a.text()
+    let response = await a.text()   
 
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -144,7 +144,7 @@ function urltosongname(song) {
 async function displayalbum(){
 
 
-    let a = await fetch(`https://github.com/My-spotify/My-Spotify/tree/main/assets/songs/`)
+    let a = await fetch(`assets/songs/`)
 
 
     let response = await a.text()
@@ -166,7 +166,7 @@ async function displayalbum(){
             
             // getting meta data of the folder
             
-            let b = await fetch(`https://github.com/My-spotify/My-Spotify/tree/main/assets/songs/${folder}/info.json`)
+            let b = await fetch(`assets/songs/${folder}/info.json`)
             let response2 = await b.json();
             
             document.querySelector(".cardcontainer").insertAdjacentHTML('beforeend', `
